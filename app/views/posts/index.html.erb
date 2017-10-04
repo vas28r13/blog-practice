@@ -1,0 +1,13 @@
+<h1>
+    Hello World!
+</h1>
+<div>
+    <% @posts.each do |post| %>
+        <h1><%= post.title %></h1>
+        <p><%= post.body %></p>
+    <% end %>
+    <% if @posts.count == 0 %>
+        <p>there are currently no blog posts.. :(</p>
+        <p>please blog about your day :)</p>
+    <% end %>
+</div>
